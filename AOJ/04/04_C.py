@@ -1,12 +1,12 @@
-s = list(input().split())
+a, op, b = map(str, input().split())
 
-while (s[1] != '?'):
-    if(s[1] == '+'):
-        print(int(s[0])+int(s[2]))
-    elif(s[1] == '-'):
-        print(int(s[0])-int(s[2]))
-    elif(s[1] == '*'):
-        print(int(s[0])*int(s[2]))
+while (op != '?'):
+    if(op == '+'):
+        print(int(a)+int(b))
+    elif(op == '-'):
+        print(int(a)-int(b))
+    elif(op == '*'):
+        print(int(a)*int(b))
     else:
-        print(int(s[0])//int(s[2]))
-    s = list(input().split())
+        print(int(a)//int(b))
+    a, op, b = map(str, input().split())
