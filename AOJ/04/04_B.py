@@ -1,4 +1,4 @@
 r = float(input())
-pi = 3.141592653589
+import math
 
-print(f"{(r*r*pi):.6f} {(2*r*pi):.6f}")
+print(f"{(r*r*math.pi):.6f} {(2*r*math.pi):.6f}")
